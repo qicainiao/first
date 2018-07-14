@@ -1,0 +1,116 @@
+<!-- html 超文本标记语言  hyperText makeup language -->
+<html lang="en">
+    <!-- lang 告诉搜索引擎 爬虫我们的网站是关于什么内容的 -->
+  <head>
+    <meta charset="utf-8">
+    <!-- unicode 万国民 utf-8是unicode升级 -->
+    <title>淘宝网</title>
+    <style type="text/css">
+      * {
+        /* margin: 0;
+        padding: 0; */
+      }
+      .nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav  li{
+        margin: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        float: left;
+        color: #f40;
+        padding: 5px;
+      }
+
+      .nav li:hover{
+        background-color: #f40;
+        color: #fff;
+        border-radius: 20px;
+      }
+    </style>
+    <script>
+      function submitData(){
+
+        alert();
+      }
+    </script>
+  </head>
+  <body>
+    <!-- 行内标签 -->
+    <em id='maodian'>我是em<strong>我是strong</strong></em>
+    <del>删除</del>
+    <span>我是span</span>
+    <img src="https://www.baidu.com/img/bd_logo1.png"></img>
+
+    <!-- 块标签 -->
+    <p>
+      行内标签可以嵌套行内标签，不可以嵌套块标签
+      块标签可以嵌套行内标签，可以嵌套行内标签。
+    </p>
+    <h1>标题1</h1>
+    <h2>标题2</h2>
+    <h3>标题3</h3>
+    <h4>标题4</h4>
+    <h5>标题5&ltdiv&gt</h5>
+    <!-- 显示< 用&lt less than > great than -->
+    <h6>标题  &nbsp &nbsp&nbsp&nbsp&nbsp  6</h6>
+    <div>
+      asdaidhdhsf<br>adasfsafsf
+    </div>
+
+     <ul type="circle">
+       <li>eewer unorder  type circle squire </li>
+       <li>ertert  unorder苹果</li>
+     </ul>
+
+     <ol type="i" reversed="reversed">
+       <li>sfdsf  order type="A" 排序方式  1 a A i I 阿拉伯 只有5种表示方式  倒着排序reversed="reversed"</li>
+       <li>adsdf   order</li>
+     </ol>
+
+     <ul class="nav"  type="cilcle">
+       <li>天猫</li>
+       <li>聚划算</li>
+       <li>天猫超市</li>
+     </ul>
+
+     <div>
+       <a  target='_blank' href="http://www.baidu.com">a超链接</a>
+       <a href="#maodian">a锚点  锚点再顶部</a>
+       <a href="tel:17183340252">打电话</a>
+       <a href="javascript:while(1){alert('让你手欠')}">协议限定符</a>
+     </div>
+
+     <!-- 发送数据 -->
+     <div>
+       <form method='post' action='submitData()'>
+         <p>
+           username: <input type="text">
+         </p>
+         <p>
+           password:<input type="password">
+         </p>
+         <input type="submit" />
+       </form>
+     </div>
+
+    <form >
+      男<input type="radio"  name="sex" value="boy" />
+      女<input type="radio" name="sex" value="girl">
+      <input type="submit"/>
+    </form>
+
+    <form>
+      <select name="provice">
+        <option value="beijing">北京</option>
+        <option value="shanghai">上海</option>
+      </select>
+      <input type="submit" />
+    </form>
+
+
+  </body>
+</html>
